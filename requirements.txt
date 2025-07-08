@@ -1,0 +1,10 @@
+flask
+ultralytics
+requests
+Pillow
+twilio
+google-cloud-storage
+uuid
+numpy
+opencv-python
+Werkzeug
