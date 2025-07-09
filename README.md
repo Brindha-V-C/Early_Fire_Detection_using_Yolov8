@@ -1,11 +1,11 @@
 
-# 🔥 Intelligent Fire Detection System using ESP32, ESP32-CAM, and YOLOv8
+# Early Fire Detection using YOLOv8
 
 An end-to-end intelligent fire detection system leveraging ESP32 microcontrollers, real-time environmental sensors, and deep learning-based image classification using YOLOv8 deployed on Google Cloud. This system ensures timely fire detection by fusing sensor and image data, triggering alerts with location and visual proof via SMS.
 
----
 
-## 📌 Project Overview
+
+## Project Overview
 
 This project integrates hardware and cloud technologies to detect fire incidents with high accuracy and minimal latency. It uses:
 
@@ -15,9 +15,9 @@ This project integrates hardware and cloud technologies to detect fire incidents
 - **Twilio API** to send real-time SMS alerts including sensor values, location, and image links
 - **Google Maps Link API** to share GPS coordinates with responders
 
----
 
-## ✅ Features
+
+## Features
 
 - 🔍 **Real-Time Fire Detection** using YOLOv8
 - 🌡️ Sensor monitoring (Gas, Temperature, Humidity)
@@ -29,17 +29,17 @@ This project integrates hardware and cloud technologies to detect fire incidents
   - GPS location as Google Maps link
   - Captured Fire Image URL
 
----
 
-## 🎯 Achievements
+
+## Achievements
 
 - 🔁 **92% Detection Accuracy**
 - ⚡ Fast response by combining real-time sensor anomalies with image classification
 - 📡 Cloud-hosted YOLOv8 inference pipeline using Flask on Google Cloud Run
 
----
 
-## 🛠️ Tools & Technologies Used
+
+## Tools & Technologies Used
 
 - **Hardware**: ESP32, ESP32-CAM, DHT11, MQ2 Gas Sensor, GPS Module (u-blox)
 - **Software Stack**:
@@ -50,10 +50,10 @@ This project integrates hardware and cloud technologies to detect fire incidents
   - Twilio API (SMS notification)
   - Google Maps Link API (Location sharing)
 
----
 
 
-## 🚀 Setup Instructions
+
+## Setup Instructions
 
 ### 1. Hardware Configuration
 - Connect the following components to the **ESP32**:
@@ -92,25 +92,26 @@ This project integrates hardware and cloud technologies to detect fire incidents
   - Location via Google Maps link
   - Fire image URL
 
----
 
-## 📄 Example Alert SMS
 
-<table>
+## Example Alert SMS
+
+
+<table align="center">
   <tr>
-    <td align="center">
-      <img src="output/fire_alert.jpeg" alt="Alert message" width="300"/>
-      <p><strong>Alert message</strong></p>
+    <td align="center" width="50%">
+      <img src="output/fire_alert.jpeg" alt="Alert Message" width="450"/>
+      <p><strong>Alert Message</strong></p>
     </td>
-    <td align="center">
-      <img src="output/captured_image.jpeg" alt="Captured fire image using ESP32 CAM" width="300"/>
-      <p><strong>Alert Flow</strong></p>
+    <td align="center" width="50%">
+      <img src="output/captured_image.jpeg" alt="Alert Flow" width="200" height="200"/>
+      <p><strong>Captured fire image using ESP32 CAM</strong></p>
     </td>
   </tr>
 </table>
 
 
----
+
 
 ## 📊 Performance Metrics
 
@@ -122,17 +123,12 @@ This project integrates hardware and cloud technologies to detect fire incidents
 | Deployment Platform  | Google Cloud Run |
 | Notification Delay   | < 3 seconds    |
 
----
 
-## 🧠 Future Enhancements
+
+## Future Enhancements
 
 - 🔒 Image encryption before cloud upload
 - 📱 Mobile app for real-time alert tracking
 - 🛰️ Use of LoRa or NB-IoT for remote area deployment
 - 🧠 Edge ML integration to reduce latency and dependency on cloud
-
----
-
-
-> Contributions are welcome! Feel free to fork this repository and submit pull requests for improvements or new features.
 
