@@ -55,16 +55,14 @@ This project integrates hardware and cloud technologies to detect fire incidents
 ## 🔧 System Architecture
 
 ```mermaid
-graph TD;
-    A[ESP32] -->|Sensor Data| B[Google Cloud Endpoint];
-    A -->|Trigger Signal| C[ESP32-CAM];
-    C -->|Captured Image| B;
-    B -->|Runs YOLOv8| D[Google Cloud Run];
-    D -->|Detection Result| E[Alert Module];
-    E -->|Twilio SMS| F[User/Responder];
-    E -->|Image URL + GPS Link| F;
-
----
+graph TD
+    A[ESP32] --> B[Google Cloud Endpoint]
+    A --> C[ESP32-CAM]
+    C --> B
+    B --> D[Google Cloud Run (YOLOv8)]
+    D --> E[Alert Module]
+    E --> F[User/Responder]
+```
 
 ## 🚀 Setup Instructions
 
