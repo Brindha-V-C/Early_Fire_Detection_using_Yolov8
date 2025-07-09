@@ -96,8 +96,18 @@ This project integrates hardware and cloud technologies to detect fire incidents
 
 ## 📄 Example Alert SMS
 
-<img src="assets/fire_alert.png" alt="Alert message" width="400"/>
-<img src="assets/captured_image.png" alt="Captured fire image using ESP32 CAM" width="400"/>
+<table>
+  <tr>
+    <td align="center">
+      <img src="output/fire_alert.jpeg" alt="Alert message" width="300"/>
+      <p><strong>Alert message</strong></p>
+    </td>
+    <td align="center">
+      <img src="output/captured_image.jpeg" alt="Captured fire image using ESP32 CAM" width="300"/>
+      <p><strong>Alert Flow</strong></p>
+    </td>
+  </tr>
+</table>
 
 
 ---
